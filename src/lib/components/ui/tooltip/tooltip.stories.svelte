@@ -1,10 +1,11 @@
 <script lang="ts" context="module">
-	import { GlossComponent, type ComponentConfig } from '$lib/index.js';
+	import { GlossComponent, defineGlossComponent } from '$lib/index.js';
 
-	export const config: ComponentConfig = {
+	export const config = defineGlossComponent({
 		id: 'tooltip',
 		name: 'Tooltip',
-	};
+		groups: [],
+	});
 </script>
 
 <script lang="ts">

@@ -1,10 +1,11 @@
 <script lang="ts" module>
-	import { GlossComponent, type ComponentConfig } from '$lib/index.js';
+	import { GlossComponent, defineGlossComponent } from '$lib/index.js';
 
-	export const config: ComponentConfig = {
+	export const config = defineGlossComponent({
 		id: 'input',
 		name: 'Input',
-	};
+		groups: ['form'],
+	});
 </script>
 
 <script lang="ts">
