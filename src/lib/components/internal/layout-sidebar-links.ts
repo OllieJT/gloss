@@ -23,13 +23,11 @@ export function appSidebarLinks(components: GlossConfigData['components']) {
 export function useSortedSidebarLinks(data: LinkGroup) {
 	return Object.entries(data)
 		.sort(([aName], [bName]) => {
-			console.log(aName, bName);
 			if (aName === 'All') {
 				return 1;
 			} else if (bName === 'All') {
 				return -1;
 			} else {
-				console.log('Returning', aName.localeCompare(bName));
 				return aName.localeCompare(bName);
 			}
 		})
