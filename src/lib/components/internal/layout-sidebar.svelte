@@ -1,12 +1,12 @@
 <script lang="ts">
+	import { layoutContext } from '$lib/components/context.js';
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
-	import type { GlossModeData, SetGlossMode, GlossConfigData } from '$lib/index.js';
+	import type { GlossModeData, SetGlossMode } from '$lib/index.js';
 	import File from 'lucide-svelte/icons/file';
 	import Moon from 'lucide-svelte/icons/moon';
 	import Sun from 'lucide-svelte/icons/sun';
 	import type { ComponentProps } from 'svelte';
 	import { appSidebarLinks, useSortedSidebarLinks } from './layout-sidebar-links.js';
-	import { layoutContext } from '$lib/components/context.js';
 
 	let {
 		ref = $bindable(null),
@@ -67,7 +67,7 @@
 						{#each group.links as item, index (index)}
 							<Sidebar.MenuButton
 								isActive={item.config.id === 'button.svelte'}
-								class="data-[active=true]:bg-transparent"
+								class="data-[active=true]:sg-bg-transparent"
 							>
 								{#snippet child({ props })}
 									<a href={item.href} {...props}>

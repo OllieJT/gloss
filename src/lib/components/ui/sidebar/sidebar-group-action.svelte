@@ -16,10 +16,10 @@
 
 	const propObj = $derived({
 		class: cn(
-			'text-sidebar-foreground ring-sidebar-ring hover:bg-sidebar-accent hover:text-sidebar-accent-foreground absolute right-3 top-3.5 flex aspect-square w-5 items-center justify-center rounded-md p-0 outline-none transition-transform focus-visible:ring-2 [&>svg]:size-4 [&>svg]:shrink-0',
+			'sg-text-sidebar-foreground sg-ring-sidebar-ring hover:sg-bg-sidebar-accent hover:sg-text-sidebar-accent-foreground sg-absolute sg-right-3 sg-top-3.5 sg-flex sg-aspect-square sg-w-5 sg-items-center sg-justify-center sg-rounded-md sg-p-0 sg-outline-none sg-transition-transform sg-focus-visible:sg-ring-2 [&>svg]:sg-size-4 [&>svg]:sg-shrink-0',
 			// Increases the hit area of the button on mobile.
-			'after:absolute after:-inset-2 after:md:hidden',
-			'group-data-[collapsible=icon]:hidden',
+			'after:sg-absolute after:-sg-inset-2 after:sg-md:sg-hidden',
+			'group-data-[collapsible=icon]:sg-hidden',
 			className,
 		),
 		'data-sidebar': 'group-action',

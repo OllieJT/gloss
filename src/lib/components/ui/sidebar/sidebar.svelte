@@ -26,7 +26,7 @@
 {#if collapsible === 'none'}
 	<div
 		class={cn(
-			'flex h-full w-[--sidebar-width] flex-col bg-sidebar text-sidebar-foreground',
+			'sg-flex sg-h-full sg-w-[--sidebar-width] sg-flex-col sg-bg-sidebar sg-text-sidebar-foreground',
 			className,
 		)}
 		bind:this={ref}
@@ -44,11 +44,11 @@
 		<Sheet.Content
 			data-sidebar="sidebar"
 			data-mobile="true"
-			class="w-[--sidebar-width] bg-sidebar p-0 text-sidebar-foreground [&>button]:hidden"
+			class="sg-w-[--sidebar-width] sg-bg-sidebar sg-p-0 sg-text-sidebar-foreground [&>button]:sg-hidden"
 			style="--sidebar-width: {SIDEBAR_WIDTH_MOBILE};"
 			{side}
 		>
-			<div class="flex h-full w-full flex-col">
+			<div class="sg-flex sg-h-full sg-w-full sg-flex-col">
 				{@render children?.()}
 			</div>
 		</Sheet.Content>
@@ -56,7 +56,7 @@
 {:else}
 	<div
 		bind:this={ref}
-		class="group peer hidden text-sidebar-foreground md:block"
+		class="sg-md:sg-block sg-group sg-peer sg-hidden sg-text-sidebar-foreground"
 		data-state={sidebar.state}
 		data-collapsible={sidebar.state === 'collapsed' ? collapsible : ''}
 		data-variant={variant}
@@ -65,31 +65,31 @@
 		<!-- This is what handles the sidebar gap on desktop -->
 		<div
 			class={cn(
-				'relative h-svh w-[--sidebar-width] bg-transparent transition-[width] duration-200 ease-linear',
-				'group-data-[collapsible=offcanvas]:w-0',
-				'group-data-[side=right]:rotate-180',
+				'sg-relative sg-h-svh sg-w-[--sidebar-width] sg-bg-transparent sg-transition-[width] sg-duration-200 sg-ease-linear',
+				'group-data-[collapsible=offcanvas]:sg-w-0',
+				'group-data-[side=right]:sg-rotate-180',
 				variant === 'floating' || variant === 'inset'
-					? 'group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)_+_theme(spacing.4))]'
-					: 'group-data-[collapsible=icon]:w-[--sidebar-width-icon]',
+					? 'group-data-[collapsible=icon]:sg-w-[calc(var(--sidebar-width-icon)_+_theme(spacing.4))]'
+					: 'group-data-[collapsible=icon]:sg-w-[--sidebar-width-icon]',
 			)}
 		></div>
 		<div
 			class={cn(
-				'fixed inset-y-0 z-10 hidden h-svh w-[--sidebar-width] transition-[left,right,width] duration-200 ease-linear md:flex',
+				'sg-fixed sg-inset-y-0 sg-z-10 sg-hidden sg-h-svh sg-w-[--sidebar-width] sg-transition-[left,right,width] sg-duration-200 sg-ease-linear md:sg-flex',
 				side === 'left'
-					? 'left-0 group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)]'
-					: 'right-0 group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)]',
+					? 'sg-left-0 group-data-[collapsible=offcanvas]:sg-left-[calc(var(--sidebar-width)*-1)]'
+					: 'sg-right-0 group-data-[collapsible=offcanvas]:sg-right-[calc(var(--sidebar-width)*-1)]',
 				// Adjust the padding for floating and inset variants.
 				variant === 'floating' || variant === 'inset'
-					? 'p-2 group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)_+_theme(spacing.4)_+2px)]'
-					: 'group-data-[collapsible=icon]:w-[--sidebar-width-icon] group-data-[side=left]:border-r group-data-[side=right]:border-l',
+					? 'sg-p-2 group-data-[collapsible=icon]:sg-w-[calc(var(--sidebar-width-icon)_+_theme(spacing.4)_+2px)]'
+					: 'group-data-[collapsible=icon]:sg-w-[--sidebar-width-icon] group-data-[side=left]:sg-border-r group-data-[side=right]:sg-border-l',
 				className,
 			)}
 			{...restProps}
 		>
 			<div
 				data-sidebar="sidebar"
-				class="flex h-full w-full flex-col bg-sidebar group-data-[variant=floating]:rounded-lg group-data-[variant=floating]:border group-data-[variant=floating]:border-sidebar-border group-data-[variant=floating]:shadow"
+				class="sg-flex sg-h-full sg-w-full sg-flex-col sg-bg-sidebar group-data-[variant=floating]:sg-rounded-lg group-data-[variant=floating]:sg-border group-data-[variant=floating]:sg-border-sidebar-border group-data-[variant=floating]:sg-shadow"
 			>
 				{@render children?.()}
 			</div>

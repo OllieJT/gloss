@@ -14,7 +14,7 @@
 <div
 	bind:this={ref}
 	data-sidebar="group-content"
-	class={cn('w-full text-sm', className)}
+	class={cn('sg-w-full sg-text-sm', className)}
 	{...restProps}
 >
 	{@render children?.()}

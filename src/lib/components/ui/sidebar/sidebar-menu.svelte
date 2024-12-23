@@ -14,7 +14,7 @@
 <ul
 	bind:this={ref}
 	data-sidebar="menu"
-	class={cn('flex w-full min-w-0 flex-col gap-1', className)}
+	class={cn('sg-flex sg-w-full sg-min-w-0 sg-flex-col sg-gap-1', className)}
 	{...restProps}
 >
 	{@render children?.()}

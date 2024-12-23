@@ -15,7 +15,7 @@
 	bind:this={ref}
 	data-sidebar="content"
 	class={cn(
-		'flex min-h-0 flex-1 flex-col gap-2 overflow-auto group-data-[collapsible=icon]:overflow-hidden',
+		'sg-flex sg-min-h-0 sg-flex-1 sg-flex-col sg-gap-2 sg-overflow-auto group-data-[collapsible=icon]:sg-overflow-hidden',
 		className,
 	)}
 	{...restProps}

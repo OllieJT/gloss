@@ -19,12 +19,12 @@
 	let filter = $derived(query?.trim().toLowerCase());
 </script>
 
-<div class="flex w-full flex-col gap-2">
+<div class="sg-flex sg-w-full sg-flex-col sg-gap-2">
 	<Label for="filter-components">Filter by name</Label>
 	<Input type="text" id="filter-components" placeholder="Component Name" bind:value={query} />
 </div>
 
-<Separator class="my-4" />
+<Separator class="sg-my-4" />
 
 {#each config.components as [id, selection] (id)}
 	{#if customListContainer}
@@ -34,7 +34,7 @@
 
 		{@render customListContainer({ children: customListStories })}
 	{:else if !filter || selection.config.name.toLowerCase().includes(filter)}
-		<h2 class="text-sm font-medium uppercase tracking-wide text-muted-foreground">
+		<h2 class="sg-text-sm sg-font-medium sg-uppercase sg-tracking-wide sg-text-muted-foreground">
 			{selection.config.name}
 		</h2>
 		<PageContainer>

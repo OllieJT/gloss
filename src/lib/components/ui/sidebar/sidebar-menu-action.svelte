@@ -18,15 +18,15 @@
 
 	const mergedProps = $derived({
 		class: cn(
-			'text-sidebar-foreground ring-sidebar-ring hover:bg-sidebar-accent hover:text-sidebar-accent-foreground peer-hover/menu-button:text-sidebar-accent-foreground absolute right-1 top-1.5 flex aspect-square w-5 items-center justify-center rounded-md p-0 outline-none transition-transform focus-visible:ring-2 [&>svg]:size-4 [&>svg]:shrink-0',
+			'sg-text-sidebar-foreground sg-ring-sidebar-ring hover:sg-bg-sidebar-accent hover:sg-text-sidebar-accent-foreground peer-hover/menu-button:sg-text-sidebar-accent-foreground sg-absolute sg-right-1 sg-top-1.5 sg-flex sg-aspect-square sg-w-5 sg-items-center sg-justify-center sg-rounded-md sg-p-0 sg-outline-none sg-transition-transform focus-visible:sg-ring-2 [&>svg]:sg-size-4 [&>svg]:sg-shrink-0',
 			// Increases the hit area of the button on mobile.
-			'after:absolute after:-inset-2 after:md:hidden',
-			'peer-data-[size=sm]/menu-button:top-1',
-			'peer-data-[size=default]/menu-button:top-1.5',
-			'peer-data-[size=lg]/menu-button:top-2.5',
-			'group-data-[collapsible=icon]:hidden',
+			'after:sg-absolute after:-sg-inset-2 after:md:sg-hidden',
+			'peer-data-[size=sm]/menu-button:sg-top-1',
+			'peer-data-[size=default]/menu-button:sg-top-1.5',
+			'peer-data-[size=lg]/menu-button:sg-top-2.5',
+			'group-data-[collapsible=icon]:sg-hidden',
 			showOnHover &&
-				'peer-data-[active=true]/menu-button:text-sidebar-accent-foreground group-focus-within/menu-item:opacity-100 group-hover/menu-item:opacity-100 data-[state=open]:opacity-100 md:opacity-0',
+				'peer-data-[active=true]/menu-button:sg-text-sidebar-accent-foreground group-focus-within/menu-item:sg-opacity-100 group-hover/menu-item:sg-opacity-100 data-[state=open]:sg-opacity-100 md:sg-opacity-0',
 			className,
 		),
 		'data-sidebar': 'menu-action',

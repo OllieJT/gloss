@@ -14,8 +14,8 @@
 <main
 	bind:this={ref}
 	class={cn(
-		'relative flex min-h-svh flex-1 flex-col bg-background',
-		'peer-data-[variant=inset]:min-h-[calc(100svh-theme(spacing.4))] md:peer-data-[variant=inset]:m-2 md:peer-data-[state=collapsed]:peer-data-[variant=inset]:ml-2 md:peer-data-[variant=inset]:ml-0 md:peer-data-[variant=inset]:rounded-xl md:peer-data-[variant=inset]:shadow',
+		'sg-relative sg-flex sg-min-h-svh sg-flex-1 sg-flex-col sg-bg-background',
+		'peer-data-[variant=inset]:sg-min-h-[calc(100svh-theme(spacing.4))] md:peer-data-[variant=inset]:sg-m-2 md:peer-data-[state=collapsed]:peer-data-[variant=inset]:sg-ml-2 md:peer-data-[variant=inset]:sg-ml-0 md:peer-data-[variant=inset]:sg-rounded-xl md:peer-data-[variant=inset]:sg-shadow',
 		className,
 	)}
 	{...restProps}

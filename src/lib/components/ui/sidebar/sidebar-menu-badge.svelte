@@ -15,12 +15,12 @@
 	bind:this={ref}
 	data-sidebar="menu-badge"
 	class={cn(
-		'pointer-events-none absolute right-1 flex h-5 min-w-5 select-none items-center justify-center rounded-md px-1 text-xs font-medium tabular-nums text-sidebar-foreground',
-		'peer-hover/menu-button:text-sidebar-accent-foreground peer-data-[active=true]/menu-button:text-sidebar-accent-foreground',
-		'peer-data-[size=sm]/menu-button:top-1',
-		'peer-data-[size=default]/menu-button:top-1.5',
-		'peer-data-[size=lg]/menu-button:top-2.5',
-		'group-data-[collapsible=icon]:hidden',
+		'sg-pointer-events-none sg-absolute sg-right-1 sg-flex sg-h-5 sg-min-w-5 sg-select-none sg-items-center sg-justify-center sg-rounded-md sg-px-1 sg-text-xs sg-font-medium sg-tabular-nums sg-text-sidebar-foreground',
+		'peer-hover/menu-button:sg-text-sidebar-accent-foreground peer-data-[active=true]/menu-button:sg-text-sidebar-accent-foreground',
+		'peer-data-[size=sm]/menu-button:sg-top-1',
+		'peer-data-[size=default]/menu-button:sg-top-1.5',
+		'peer-data-[size=lg]/menu-button:sg-top-2.5',
+		'group-data-[collapsible=icon]:sg-hidden',
 		className,
 	)}
 	{...restProps}

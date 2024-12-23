@@ -56,7 +56,7 @@
 
 {#each variations as variation, i (i)}
 	<GlossComponent>
-		<div class="grid w-full max-w-sm items-center gap-2">
+		<div class="sg-grid sg-w-full sg-max-w-sm sg-items-center sg-gap-2">
 			{#if variation.label}
 				<Label for={variation.type}>{variation.label}</Label>
 			{/if}

@@ -1,11 +1,12 @@
-import { fontFamily } from 'tailwindcss/defaultTheme';
 import type { Config } from 'tailwindcss';
 import tailwindcssAnimate from 'tailwindcss-animate';
+import { fontFamily } from 'tailwindcss/defaultTheme';
 
 const config: Config = {
 	darkMode: ['class'],
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	safelist: ['dark'],
+	prefix: 'sg-',
 	theme: {
 		container: {
 			center: true,

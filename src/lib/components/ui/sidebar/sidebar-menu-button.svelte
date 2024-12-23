@@ -2,17 +2,17 @@
 	import { tv, type VariantProps } from 'tailwind-variants';
 
 	export const sidebarMenuButtonVariants = tv({
-		base: 'peer/menu-button flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left text-sm outline-none ring-sidebar-ring transition-[width,height,padding] hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:bg-sidebar-accent data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:!size-8 group-data-[collapsible=icon]:!p-2 [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0',
+		base: 'sg-peer/menu-button sg-flex sg-w-full sg-items-center sg-gap-2 sg-overflow-hidden sg-rounded-md sg-p-2 sg-text-left sg-text-sm sg-outline-none sg-ring-sidebar-ring sg-transition-[width,height,padding] hover:sg-bg-sidebar-accent hover:sg-text-sidebar-accent-foreground focus-visible:sg-ring-2 active:sg-bg-sidebar-accent active:sg-text-sidebar-accent-foreground disabled:sg-pointer-events-none disabled:sg-opacity-50 group-has-[[data-sidebar=menu-action]]/menu-item:sg-pr-8 aria-disabled:sg-pointer-events-none aria-disabled:sg-opacity-50 data-[active=true]:sg-bg-sidebar-accent data-[active=true]:sg-font-medium data-[active=true]:sg-text-sidebar-accent-foreground data-[state=open]:hover:sg-bg-sidebar-accent data-[state=open]:hover:sg-text-sidebar-accent-foreground group-data-[collapsible=icon]:!sg-size-8 group-data-[collapsible=icon]:!sg-p-2 [&>span:last-child]:sg-truncate [&>svg]:sg-size-4 [&>svg]:sg-shrink-0',
 		variants: {
 			variant: {
-				default: 'hover:bg-sidebar-accent hover:text-sidebar-accent-foreground',
+				default: 'hover:sg-bg-sidebar-accent hover:sg-text-sidebar-accent-foreground',
 				outline:
-					'bg-background shadow-[0_0_0_1px_hsl(var(--sidebar-border))] hover:bg-sidebar-accent hover:text-sidebar-accent-foreground hover:shadow-[0_0_0_1px_hsl(var(--sidebar-accent))]',
+					'sg-bg-background sg-shadow-[0_0_0_1px_hsl(var(--sidebar-border))] hover:sg-bg-sidebar-accent hover:sg-text-sidebar-accent-foreground hover:sg-shadow-[0_0_0_1px_hsl(var(--sidebar-accent))]',
 			},
 			size: {
-				default: 'h-8 text-sm',
-				sm: 'h-7 text-xs',
-				lg: 'h-12 text-sm group-data-[collapsible=icon]:!p-0',
+				default: 'sg-h-8 sg-text-sm',
+				sm: 'sg-h-7 sg-text-xs',
+				lg: 'sg-h-12 sg-text-sm group-data-[collapsible=icon]:!sg-p-0',
 			},
 		},
 		defaultVariants: {
