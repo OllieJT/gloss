@@ -1,0 +1,49 @@
+{
+	"[json][typescript][javascript][svelte][html][css][postcss]": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": "explicit",
+			"source.fixAll.prettier": "explicit",
+			"source.organizeImports": "explicit"
+		},
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"cssvar.extensions": ["css", "postcss", "svelte"],
+	"cssvar.files": ["./src/app.css"],
+	"cssvar.ignore": [
+		// Do not ignore node_modules css files, which is ignored by default
+	],
+	"eslint.enable": true,
+	"eslint.probe": ["javascript", "typescript", "html", "markdown", "json", "svelte"],
+	"eslint.useFlatConfig": true,
+	"eslint.workingDirectories": [{ "mode": "auto" }],
+	"files.associations": {
+		".css": "postcss",
+		"pre-commit": "shellscript",
+		"pre-push": "shellscript"
+	},
+	"files.exclude": {
+		"**/*-lock.*": true,
+		"**/*.Identifier": true,
+		"**/*.map": true,
+		"**/.DS_Store": true,
+		"**/.cache": true,
+		"**/.eslintcache": true,
+		"**/.gitattributes": true,
+		"**/.svelte-kit": true,
+		"**/.turbo": true,
+		"**/node_modules": true,
+		"**/tsconfig.tsbuildinfo": true
+	},
+	"files.watcherExclude": {
+		"**/.svelte-kit": true,
+		"**/.vercel": true,
+		"**/node_modules": true
+	},
+	"tailwindCSS.experimental.classRegex": [
+		"class:\\s*?[\"'`]([^\"'`]*).*?,",
+		"([\"'`][^\"'`]*.*?[\"'`])",
+		"[\"'`]([^\"'`]*).*?[\"'`]"
+	],
+	"todo-tree.tree.scanMode": "workspace",
+	"typescript.tsdk": "node_modules/typescript/lib"
+}

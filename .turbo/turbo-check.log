@@ -1,0 +1,14 @@
+
+
+> @repo/svelte-gloss@0.0.1 check /Users/olliejt/Developer/@watson/frontend/packages/svelte-gloss
+> svelte-kit sync && svelte-check --tsconfig ./tsconfig.json
+
+If bundling, conditions should include development or production. If not bundling, conditions or NODE_ENV should include development or production. See https://www.npmjs.com/package/esm-env for tips on setting conditions in popular bundlers and runtimes.
+
+====================================
+Loading svelte-check in workspace: /Users/olliejt/Developer/@watson/frontend/packages/svelte-gloss
+Getting Svelte diagnostics...
+
+====================================
+[32msvelte-check found 0 errors and 0 warnings
+[39m
