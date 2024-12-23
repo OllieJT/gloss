@@ -23,7 +23,6 @@
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"type": "module",
-	"prettier": "prettier-config-custom",
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
