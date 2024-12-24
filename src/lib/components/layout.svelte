@@ -13,12 +13,12 @@
 	const {
 		children,
 		config,
-		mode,
+		mode = 'light',
 		setMode,
 	}: {
 		children?: Snippet;
 		config: GlossConfigData;
-		mode: GlossModeData;
+		mode?: GlossModeData;
 		setMode?: SetGlossMode;
 	} = $props();
 

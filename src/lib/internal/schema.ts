@@ -2,7 +2,9 @@ import { formatComponentId } from '$lib/internal/format.js';
 import type { Component } from 'svelte';
 import { z } from 'zod';
 
-const isValidGroups = (groups: string[]): groups is [string, ...string[]] => groups.length >= 1;
+const isValidGroups = (groups: string[]): groups is [string, ...string[]] => {
+	return groups.length >= 1;
+};
 
 export const glossComponentSchema = z.object({
 	id: z.string().transform(formatComponentId),
@@ -12,7 +14,7 @@ export const glossComponentSchema = z.object({
 		.min(1)
 		.default(['Unsorted'])
 		.catch(['Unsorted'])
-		.refine<[string, ...string[]]>(isValidGroups),
+		.refine(isValidGroups),
 });
 
 export const glossModuleSchema = z.object({
@@ -25,7 +27,7 @@ export const glossModuleSchema = z.object({
 export const glossConfigSchema = z.object({
 	prefix: z.string(),
 	components: z.map(z.string(), glossModuleSchema),
-	paramKey: z.string(),
+	parameter: z.string(),
 });
 
 export const glossModeSchema = z.enum(['light', 'dark']);
