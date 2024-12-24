@@ -1,5 +1,11 @@
 # svelte-gloss
 
+## 0.0.7
+
+### Patch Changes
+
+- [`ca75202`](https://github.com/OllieJT/gloss/commit/ca752021d42d77d809df75e1a4b3f2b0baf9be41) Thanks [@OllieJT](https://github.com/OllieJT)! - Move style generation to CI
+
 ## 0.0.6
 
 ### Patch Changes
