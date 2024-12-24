@@ -4,7 +4,7 @@
 
 Checkout the <a href="https://github.com/OllieJT/gloss/blob/main/CHANGELOG.md">changelog</a> to see what's new.
 
-![npm](https://img.shields.io/npm/v/svelte-gloss?style=for-the-badge) ![NPM](https://img.shields.io/npm/l/svelte-gloss?style=for-the-badge) ![npm](https://img.shields.io/npm/dt/svelte-gloss?style=for-the-badge) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/OllieJT/gloss/main?style=for-the-badge)
+[![npm](https://img.shields.io/github/v/release/DesignThen/svelte-icons?style=plastic)](https://github.com/OllieJT/gloss/releases) [![npm](https://img.shields.io/npm/dt/svelte-gloss?style=plastic)](https://www.npmjs.com/package/svelte-gloss) [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/OllieJT/gloss/main?style=plastic)](https://github.com/OllieJT/gloss/blob/main/CHANGELOG.md)
 
 ---
 
