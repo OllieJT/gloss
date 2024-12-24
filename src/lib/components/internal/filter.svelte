@@ -72,7 +72,7 @@
 							closeAndFocusTrigger();
 						}}
 					>
-						<Check class={cn(!Boolean(value) && 'sg-text-transparent')} />
+						<Check class={cn(!value && 'sg-text-transparent')} />
 						All
 					</Command.Item>
 				</Command.Group>
