@@ -1,5 +1,11 @@
 # svelte-gloss
 
+## 0.0.6
+
+### Patch Changes
+
+- [`2cf3535`](https://github.com/OllieJT/gloss/commit/2cf3535807207d51995d8e562835c01c4e8bbf1f) Thanks [@OllieJT](https://github.com/OllieJT)! - Fix css generation
+
 ## 0.0.5
 
 ### Patch Changes
