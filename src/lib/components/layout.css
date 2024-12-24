@@ -4,46 +4,46 @@
 :root {
 	--sg-radius: 0.5rem;
 
-	--sg-background: 200 4% 96%;
-	--sg-foreground: 240 10% 3.9%;
-	--sg-muted: 240 4.8% 95.9%;
-	--sg-muted-foreground: 240 3.8% 46.1%;
+	--sg-background: 200 0% 96%;
+	--sg-foreground: 240 0% 3.9%;
+	--sg-muted: 240 0% 95.9%;
+	--sg-muted-foreground: 240 0% 46.1%;
 	--sg-popover: 0 0% 100%;
-	--sg-popover-foreground: 240 10% 3.9%;
+	--sg-popover-foreground: 240 0% 3.9%;
 	--sg-card: 0 0% 100%;
-	--sg-card-foreground: 240 10% 3.9%;
-	--sg-border: 240 5.9% 90%;
-	--sg-input: 240 5.9% 90%;
-	--sg-primary: 240 5.9% 10%;
+	--sg-card-foreground: 240 0% 3.9%;
+	--sg-border: 240 0% 90%;
+	--sg-input: 240 0% 90%;
+	--sg-primary: 240 0% 10%;
 	--sg-primary-foreground: 0 0% 98%;
-	--sg-secondary: 240 10% 90%;
-	--sg-secondary-foreground: 240 5.9% 10%;
-	--sg-accent: 240 10% 90%;
-	--sg-accent-foreground: 240 5.9% 10%;
-	--sg-ring: 240 5.9% 10%;
+	--sg-secondary: 240 0% 90%;
+	--sg-secondary-foreground: 240 0% 10%;
+	--sg-accent: 240 0% 90%;
+	--sg-accent-foreground: 240 0% 10%;
+	--sg-ring: 240 0% 10%;
 
 	--sg-destructive: 0 84.2% 60.2%;
 	--sg-destructive-foreground: 0 0% 98%;
 }
 
 .dark {
-	--sg-background: 240 10% 3.9%;
+	--sg-background: 240 0% 3.9%;
 	--sg-foreground: 0 0% 98%;
-	--sg-muted: 240 3.7% 15.9%;
-	--sg-muted-foreground: 240 5% 64.9%;
-	--sg-popover: 240 10% 10%;
+	--sg-muted: 240 0% 15.9%;
+	--sg-muted-foreground: 240 0% 64.9%;
+	--sg-popover: 240 0% 10%;
 	--sg-popover-foreground: 0 0% 98%;
-	--sg-card: 240 10% 6%;
+	--sg-card: 240 0% 6%;
 	--sg-card-foreground: 0 0% 98%;
-	--sg-border: 240 10% 12%;
-	--sg-input: 240 3.7% 15.9%;
+	--sg-border: 240 0% 12%;
+	--sg-input: 240 0% 15.9%;
 	--sg-primary: 0 0% 98%;
-	--sg-primary-foreground: 240 5.9% 10%;
-	--sg-secondary: 240 3.7% 15.9%;
+	--sg-primary-foreground: 240 0% 10%;
+	--sg-secondary: 240 0% 15.9%;
 	--sg-secondary-foreground: 0 0% 98%;
-	--sg-accent: 240 10% 15.9%;
+	--sg-accent: 240 0% 15.9%;
 	--sg-accent-foreground: 0 0% 98%;
-	--sg-ring: 240 4.9% 83.9%;
+	--sg-ring: 240 0% 83.9%;
 
 	--sg-destructive: 355 80% 60%;
 	--sg-destructive-foreground: 340 100% 6%;
