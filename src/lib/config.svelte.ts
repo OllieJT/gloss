@@ -5,19 +5,19 @@ import type { GlossConfigData, GlossModuleData } from './types.js';
 
 export class SvelteGloss {
 	#prefix: GlossConfigData['prefix'] = $state('/');
-	#paramKey: GlossConfigData['paramKey'] = $state('id');
+	#parameter: GlossConfigData['parameter'] = $state('id');
 	#components: GlossConfigData['components'] = new SvelteMap();
 
 	config: GlossConfigData = $derived({
 		components: this.#components,
-		paramKey: this.#paramKey,
+		parameter: this.#parameter,
 		prefix: this.#prefix,
 	});
 
-	constructor(config: Partial<GlossConfigData>) {
-		this.#prefix = '/' + formatPrefix(config.prefix || '/__gloss__');
-		this.#components = config.components || new SvelteMap();
-		this.#paramKey = config.paramKey || 'id';
+	constructor(config?: Partial<GlossConfigData>) {
+		this.#prefix = '/' + formatPrefix(config?.prefix || '/__gloss__');
+		this.#components = config?.components || new SvelteMap();
+		this.#parameter = config?.parameter || 'id';
 	}
 
 	registerComponent({ config: rawConfig, ...rest }: Omit<GlossModuleData, 'href'>) {
