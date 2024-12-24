@@ -48,6 +48,9 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
+      - name: Formatting css
+        run: npx tailwindcss -i ./src/lib/layout.css -o ./src/lib/layout.css
+
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
