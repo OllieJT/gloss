@@ -112,7 +112,74 @@ Pass your config to the `GlossLayout` component.
 <GlossLayout config="{gloss.config}"> {@render children()} </GlossLayout>
 ```
 
-### 5. Setup light/dark mode (Optional)
+### 5. Create a "story"
+
+When creating the config, we shared how you can register all components that match a file pattern like `$lib/**/*.stories.svelte`. So in this example we'll create a story for our button component at `$lib/components/button.stories.svelte`
+
+> [!IMPORTANT]
+> Your config must be exported. Remember that we can only export from a module script within a svelte component.
+
+```html
+<script lang="ts" module>
+	import { GlossWrapComponent, defineGlossComponent } from 'svelte-gloss';
+
+	export const config = defineGlossComponent({
+		// This will be passed to the router and used to load this component based on the url.
+		id: 'button',
+
+		// A human-readable name for this component
+		name: 'Button',
+
+		// A list of groups this component belongs to. It should be included in at least one group.
+		groups: ['ShadCN', 'Form'],
+	});
+</script>
+
+<script lang="ts">
+	import MailIcon from 'lucide-svelte/icons/mail';
+	import { Button, type ButtonVariant } from './index.js';
+
+	/*
+		You can display your component variations however you like.
+		Here we are looping over an array of properties.
+		You can also define them manually.
+	*/
+
+	type Props = {
+		variant: ButtonVariant;
+		content: string;
+		disabled: boolean;
+	};
+
+	const variations: Props[] = [
+		{ variant: 'default', content: 'Default Button', disabled: false },
+		{ variant: 'default', content: 'Disabled Button', disabled: true },
+		{ variant: 'highlight', content: 'Highlight Button', disabled: false },
+	];
+</script>
+
+{#each variations as variation}
+<!-- GlossWrapComponent should wrap each of your component variations. -->
+<GlossWrapComponent>
+	<button variant="{variation.variant}" disabled="{variation.disabled}" onclick="{()" ="">
+		alert('clicked')} >
+		<MailIcon class="mr-2 size-4" />
+		{variation.content}
+	</button>
+</GlossWrapComponent>
+{/each}
+
+<!-- You can also manually define variations. -->
+<GlossWrapComponent>
+	<button onclick="{()" ="">
+		alert('clicked')} size="icon">
+		<MailIcon class="mr-2 size-4" />
+		<span class="sr-only">Email</span>
+	</button>
+</GlossWrapComponent>
+```
+
+### 6. Setup light/dark mode (Optional)
 
 You can pass the current ui state, and a function to set the ui state directly to the `GlossLayout` component.
 
@@ -134,6 +201,10 @@ You can pass the current ui state, and a function to set the ui state directly t
 </GlossLayout>
 
 ```
+
+### Done
+
+When you start your dev server, you can visit the route you created. If you followed my recommendations, it will look something like [localhost:5173/\_\_ui\_\_](http://localhost:5173/__ui__)
 
 ## Contributing
 
