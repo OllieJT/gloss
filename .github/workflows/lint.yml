@@ -1,0 +1,44 @@
+name: 'Lint'
+on:
+  pull_request_target:
+    branches:
+      - main
+
+# cancel in-progress runs on new commits to same PR (gitub.event.number)
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.number || github.sha }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read # to fetch code (actions/checkout)
+
+jobs:
+  Lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    # prevents this action from running on forks
+    if: github.repository == 'OllieJT/gloss'
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+        with:
+          # This makes Actions fetch all Git history so that Changesets can generate changelogs with the correct commits
+          fetch-depth: 0
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.12.0
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - run: pnpm run lint
+
+      - run: pnpm run check

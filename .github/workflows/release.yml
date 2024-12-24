@@ -10,7 +10,7 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 permissions: {}
 
 jobs:
-  release:
+  Release:
     name: Release
     runs-on: ubuntu-latest
     # prevents this action from running on forks
@@ -34,7 +34,7 @@ jobs:
       - name: Setup PNPM
         uses: pnpm/action-setup@v4
         with:
-          version: 9.9.0
+          version: 9.12.0
 
       - name: Install Dependencies
         run: pnpm install
