@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { layoutContext } from '$lib/components/context.js';
+	import { layoutContext } from '$lib/components/internal/context.js';
 	import { Input } from '$lib/components/ui/input/index.js';
 	import { Label } from '$lib/components/ui/label/index.js';
 	import Separator from '$lib/components/ui/separator/separator.svelte';
 	import type { Snippet } from 'svelte';
 	import LazyComponent from './internal/lazy-component.svelte';
-	import PageContainer from './internal/page-container.svelte';
+	import WrapPage from './wrap-page.svelte';
 
 	let {
 		container: customListContainer = undefined,
@@ -37,8 +37,8 @@
 		<h2 class="sg-text-sm sg-font-medium sg-uppercase sg-tracking-wide sg-text-muted-foreground">
 			{selection.config.name}
 		</h2>
-		<PageContainer>
+		<WrapPage>
 			<LazyComponent {selection} />
-		</PageContainer>
+		</WrapPage>
 	{/if}
 {/each}

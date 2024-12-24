@@ -1,6 +1,7 @@
-import GlossComponent from '$lib/components/component.svelte';
 import GlossLayout from '$lib/components/layout.svelte';
-import GlossPageAll from '$lib/components/page.all.svelte';
-import GlossPage from '$lib/components/page.single.svelte';
+import GlossPageDetail from '$lib/components/page.detail.svelte';
+import GlossPageRoot from '$lib/components/page.root.svelte';
+import GlossWrapComponent from '$lib/components/wrap-component.svelte';
+import GlossWrapPage from '$lib/components/wrap-page.svelte';
 
-export { GlossComponent, GlossLayout, GlossPage, GlossPageAll };
+export { GlossLayout, GlossPageDetail, GlossPageRoot, GlossWrapComponent, GlossWrapPage };

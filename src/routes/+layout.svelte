@@ -11,9 +11,11 @@
 		if (mode === 'light') {
 			// remove 'dark' class from <html>
 			document.documentElement.classList.remove('sg-dark');
+			document.documentElement.classList.remove('dark');
 		} else {
 			// add 'dark' class to <html>
 			document.documentElement.classList.add('sg-dark');
+			document.documentElement.classList.add('dark');
 		}
 	});
 </script>

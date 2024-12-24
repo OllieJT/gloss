@@ -1,5 +1,5 @@
 <script lang="ts" module>
-	import { GlossComponent, defineGlossComponent } from '$lib/index.js';
+	import { GlossWrapComponent, defineGlossComponent } from '$lib/index.js';
 
 	export const config = defineGlossComponent({
 		id: 'input',
@@ -55,7 +55,7 @@
 </script>
 
 {#each variations as variation, i (i)}
-	<GlossComponent>
+	<GlossWrapComponent>
 		<div class="sg-grid sg-w-full sg-max-w-sm sg-items-center sg-gap-2">
 			{#if variation.label}
 				<Label for={variation.type}>{variation.label}</Label>
@@ -67,5 +67,5 @@
 				disabled={variation.disabled}
 			/>
 		</div>
-	</GlossComponent>
+	</GlossWrapComponent>
 {/each}
