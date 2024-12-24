@@ -1,5 +1,13 @@
 # svelte-gloss
 
+## 0.0.4
+
+### Patch Changes
+
+- [#7](https://github.com/OllieJT/gloss/pull/7) [`b7e3fbe`](https://github.com/OllieJT/gloss/commit/b7e3fbe6c50152bce7c0bd7eec15e1b213ca38b8) Thanks [@OllieJT](https://github.com/OllieJT)! - Simplifies initial config values
+
+- [#7](https://github.com/OllieJT/gloss/pull/7) [`b7e3fbe`](https://github.com/OllieJT/gloss/commit/b7e3fbe6c50152bce7c0bd7eec15e1b213ca38b8) Thanks [@OllieJT](https://github.com/OllieJT)! - Updates setup docs
+
 ## 0.0.3
 
 ### Patch Changes
