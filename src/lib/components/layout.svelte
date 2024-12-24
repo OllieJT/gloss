@@ -7,8 +7,8 @@
 	import Moon from 'lucide-svelte/icons/moon';
 	import Sun from 'lucide-svelte/icons/sun';
 	import { type Snippet } from 'svelte';
+	import '../layout.css';
 	import Filter from './internal/filter.svelte';
-	import './layout.css';
 
 	const {
 		children,
