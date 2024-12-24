@@ -1,5 +1,11 @@
 # svelte-gloss
 
+## 0.0.5
+
+### Patch Changes
+
+- [`61af509`](https://github.com/OllieJT/gloss/commit/61af5091484db28196e6325cf9cbf4ff072e16dc) Thanks [@OllieJT](https://github.com/OllieJT)! - relocates layout.css to root
+
 ## 0.0.4
 
 ### Patch Changes
