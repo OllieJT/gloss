@@ -12,7 +12,7 @@
 	} = $props();
 
 	const config = layoutContext.get();
-	const selection = $derived(config.components.get(page.params[config.paramKey]));
+	const selection = $derived(config.components.get(page.params[config.parameter]));
 </script>
 
 {#if customListContainer}
