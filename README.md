@@ -134,3 +134,20 @@ You can pass the current ui state, and a function to set the ui state directly t
 </GlossLayout>
 
 ```
+
+## Contributing
+
+Contributions are welcome. To avoid rejected pull requests, I recommend you start by opening an [issue](https://github.com/OllieJT/gloss/issues) to discuss your idea.
+
+### Overview
+
+1. Clone this repository
+   - Install dependencies with `pnpm`
+2. Make changes
+   - Check linting with `pnpm check`
+   - Run formatting with `pnpm format`
+3. Create a changeset with `pnpm changeset`
+   - Follow semver for selecting `patch` | `minor` | `major`
+   - Include a descriptive note for your changeset
+4. Commit your changes
+5. Create a pull request back to `OllieJT/svelte-gloss`
