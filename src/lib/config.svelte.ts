@@ -15,7 +15,7 @@ export class SvelteGloss {
 	});
 
 	constructor(config?: Partial<GlossConfigData>) {
-		this.#prefix = '/' + formatPrefix(config?.prefix || '/__gloss__');
+		this.#prefix = '/' + formatPrefix(config?.prefix || '/__ui__');
 		this.#components = config?.components || new SvelteMap();
 		this.#parameter = config?.parameter || 'id';
 	}
