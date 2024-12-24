@@ -4,7 +4,9 @@
 	"private": false,
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build && pnpm run package && npx tailwindcss -i ./src/lib/layout.css -o ./dist/layout.css",
+		"build": "pnpm run build:app && pnpm run package && pnpm run build:styles",
+		"build:app": "vite build",
+		"build:styles": "npx tailwindcss -i ./dist/layout.css -o ./dist/layout.css",
 		"preview": "vite preview",
 		"package": "svelte-kit sync && svelte-package && publint",
 		"prepublishOnly": "pnpm run package",
