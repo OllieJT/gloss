@@ -1,5 +1,5 @@
 <script lang="ts" module>
-	import { GlossComponent, defineGlossComponent } from '$lib/index.js';
+	import { GlossWrapComponent, defineGlossComponent } from '$lib/index.js';
 
 	export const config = defineGlossComponent({
 		id: 'button',
@@ -29,7 +29,7 @@
 </script>
 
 {#each variations as variation, i (i)}
-	<GlossComponent>
+	<GlossWrapComponent>
 		<Button
 			variant={variation.variant}
 			disabled={variation.disabled}
@@ -38,5 +38,5 @@
 			<Mail class="mr-2 size-4" />
 			{variation.content}
 		</Button>
-	</GlossComponent>
+	</GlossWrapComponent>
 {/each}

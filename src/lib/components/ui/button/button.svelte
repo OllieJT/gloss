@@ -4,21 +4,22 @@
 	import { type VariantProps, tv } from 'tailwind-variants';
 
 	export const buttonVariants = tv({
-		base: 'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0',
+		base: 'sg-inline-flex sg-items-center sg-justify-center sg-gap-2 sg-whitespace-nowrap sg-rounded-md sg-text-sm sg-font-medium sg-ring-offset-background sg-transition-colors focus-visible:sg-outline-none focus-visible:sg-ring-2 focus-visible:sg-ring-ring focus-visible:sg-ring-offset-2 disabled:sg-pointer-events-none disabled:sg-opacity-50 [&_svg]:sg-pointer-events-none [&_svg]:sg-size-4 [&_svg]:sg-shrink-0',
 		variants: {
 			variant: {
-				default: 'bg-primary text-primary-foreground hover:bg-primary/90',
-				destructive: 'bg-destructive text-destructive-foreground hover:bg-destructive/90',
-				outline: 'border border-input bg-background hover:bg-accent hover:text-accent-foreground',
-				secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
-				ghost: 'hover:bg-accent hover:text-accent-foreground',
-				link: 'text-primary underline-offset-4 hover:underline',
+				default: 'sg-bg-primary sg-text-primary-foreground hover:sg-bg-primary/90',
+				destructive: 'sg-bg-destructive sg-text-destructive-foreground hover:sg-bg-destructive/90',
+				outline:
+					'sg-border sg-border-input sg-bg-background hover:sg-bg-accent hover:sg-text-accent-foreground',
+				secondary: 'sg-bg-secondary sg-text-secondary-foreground hover:sg-bg-secondary/80',
+				ghost: 'hover:sg-bg-accent hover:sg-text-accent-foreground',
+				link: 'sg-text-primary sg-underline-offset-4 hover:sg-underline',
 			},
 			size: {
-				default: 'h-10 px-4 py-2',
-				sm: 'h-9 rounded-md px-3',
-				lg: 'h-11 rounded-md px-8',
-				icon: 'h-10 w-10',
+				default: 'sg-h-10 sg-px-4 sg-py-2',
+				sm: 'sg-h-9 sg-rounded-md sg-px-3',
+				lg: 'sg-h-11 sg-rounded-md sg-px-8',
+				icon: 'sg-h-10 sg-w-10',
 			},
 		},
 		defaultVariants: {

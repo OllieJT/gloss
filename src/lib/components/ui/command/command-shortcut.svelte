@@ -8,14 +8,13 @@
 		class: className,
 		children,
 		...restProps
-	}: WithElementRef<HTMLAttributes<HTMLDivElement>> = $props();
+	}: WithElementRef<HTMLAttributes<HTMLSpanElement>> = $props();
 </script>
 
-<div
+<span
 	bind:this={ref}
-	data-sidebar="group-content"
-	class={cn('w-full text-sm', className)}
+	class={cn('sg-ml-auto sg-text-xs sg-tracking-widest sg-text-muted-foreground', className)}
 	{...restProps}
 >
 	{@render children?.()}
-</div>
+</span>

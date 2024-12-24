@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { layoutContext } from '$lib/components/context.js';
+	import { layoutContext } from '$lib/components/internal/context.js';
 	import type { Snippet } from 'svelte';
 	import LazyComponent from './internal/lazy-component.svelte';
-	import PageContainer from './internal/page-container.svelte';
+	import PageContainer from './wrap-page.svelte';
 
 	let {
 		container: customListContainer = undefined,

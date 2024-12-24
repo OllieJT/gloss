@@ -1,11 +1,12 @@
-import { fontFamily } from 'tailwindcss/defaultTheme';
 import type { Config } from 'tailwindcss';
 import tailwindcssAnimate from 'tailwindcss-animate';
+import { fontFamily } from 'tailwindcss/defaultTheme';
 
 const config: Config = {
 	darkMode: ['class'],
 	content: ['./src/**/*.{html,js,svelte,ts}'],
-	safelist: ['dark'],
+	safelist: ['sg-dark'],
+	prefix: 'sg-',
 	theme: {
 		container: {
 			center: true,
@@ -16,38 +17,38 @@ const config: Config = {
 		},
 		extend: {
 			colors: {
-				border: 'hsl(var(--border) / <alpha-value>)',
-				input: 'hsl(var(--input) / <alpha-value>)',
-				ring: 'hsl(var(--ring) / <alpha-value>)',
-				background: 'hsl(var(--background) / <alpha-value>)',
-				foreground: 'hsl(var(--foreground) / <alpha-value>)',
+				border: 'hsl(var(--sg-border) / <alpha-value>)',
+				input: 'hsl(var(--sg-input) / <alpha-value>)',
+				ring: 'hsl(var(--sg-ring) / <alpha-value>)',
+				background: 'hsl(var(--sg-background) / <alpha-value>)',
+				foreground: 'hsl(var(--sg-foreground) / <alpha-value>)',
 				primary: {
-					DEFAULT: 'hsl(var(--primary) / <alpha-value>)',
-					foreground: 'hsl(var(--primary-foreground) / <alpha-value>)',
+					DEFAULT: 'hsl(var(--sg-primary) / <alpha-value>)',
+					foreground: 'hsl(var(--sg-primary-foreground) / <alpha-value>)',
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary) / <alpha-value>)',
-					foreground: 'hsl(var(--secondary-foreground) / <alpha-value>)',
+					DEFAULT: 'hsl(var(--sg-secondary) / <alpha-value>)',
+					foreground: 'hsl(var(--sg-secondary-foreground) / <alpha-value>)',
 				},
 				destructive: {
-					DEFAULT: 'hsl(var(--destructive) / <alpha-value>)',
-					foreground: 'hsl(var(--destructive-foreground) / <alpha-value>)',
+					DEFAULT: 'hsl(var(--sg-destructive) / <alpha-value>)',
+					foreground: 'hsl(var(--sg-destructive-foreground) / <alpha-value>)',
 				},
 				muted: {
-					DEFAULT: 'hsl(var(--muted) / <alpha-value>)',
-					foreground: 'hsl(var(--muted-foreground) / <alpha-value>)',
+					DEFAULT: 'hsl(var(--sg-muted) / <alpha-value>)',
+					foreground: 'hsl(var(--sg-muted-foreground) / <alpha-value>)',
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--accent) / <alpha-value>)',
-					foreground: 'hsl(var(--accent-foreground) / <alpha-value>)',
+					DEFAULT: 'hsl(var(--sg-accent) / <alpha-value>)',
+					foreground: 'hsl(var(--sg-accent-foreground) / <alpha-value>)',
 				},
 				popover: {
-					DEFAULT: 'hsl(var(--popover) / <alpha-value>)',
-					foreground: 'hsl(var(--popover-foreground) / <alpha-value>)',
+					DEFAULT: 'hsl(var(--sg-popover) / <alpha-value>)',
+					foreground: 'hsl(var(--sg-popover-foreground) / <alpha-value>)',
 				},
 				card: {
-					DEFAULT: 'hsl(var(--card) / <alpha-value>)',
-					foreground: 'hsl(var(--card-foreground) / <alpha-value>)',
+					DEFAULT: 'hsl(var(--sg-card) / <alpha-value>)',
+					foreground: 'hsl(var(--sg-card-foreground) / <alpha-value>)',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -61,10 +62,10 @@ const config: Config = {
 				},
 			},
 			borderRadius: {
-				xl: 'calc(var(--radius) + 4px)',
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)',
+				xl: 'calc(var(--sg-radius) + 4px)',
+				lg: 'var(--sg-radius)',
+				md: 'calc(var(--sg-radius) - 2px)',
+				sm: 'calc(var(--sg-radius) - 4px)',
 			},
 			fontFamily: {
 				sans: [...fontFamily.sans],

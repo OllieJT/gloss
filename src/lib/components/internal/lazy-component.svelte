@@ -18,5 +18,5 @@
 		<selection.default />
 	{/if}
 {:else}
-	<div class="p-4">No Component</div>
+	<div class="sg-p-4">No Component</div>
 {/if}

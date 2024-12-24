@@ -6,7 +6,7 @@
 
 <section
 	data-gloss="list-container"
-	class="@container/gloss-list grid min-h-max divide-y overflow-clip rounded-md border"
+	class="sg-@container/gloss-list sg-grid sg-min-h-max sg-divide-y sg-overflow-clip sg-rounded-md sg-border"
 >
 	{@render children()}
 </section>

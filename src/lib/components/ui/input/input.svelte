@@ -14,7 +14,7 @@
 <input
 	bind:this={ref}
 	class={cn(
-		'flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm',
+		'sg-flex sg-h-10 sg-w-full sg-rounded-md sg-border sg-border-input sg-bg-background sg-px-3 sg-py-2 sg-text-base sg-ring-offset-background file:sg-border-0 file:sg-bg-transparent file:sg-text-sm file:sg-font-medium placeholder:sg-text-muted-foreground focus-visible:sg-outline-none focus-visible:sg-ring-2 focus-visible:sg-ring-ring focus-visible:sg-ring-offset-2 disabled:sg-cursor-not-allowed disabled:sg-opacity-50 md:sg-text-sm',
 		className,
 	)}
 	bind:value

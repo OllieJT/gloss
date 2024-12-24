@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { GlossPage } from '$lib/index.js';
+	import { GlossPageDetail } from '$lib/index.js';
 </script>
 
-<GlossPage />
+<GlossPageDetail />

@@ -1,10 +1,10 @@
 <script lang="ts" context="module">
-	import { GlossComponent, defineGlossComponent } from '$lib/index.js';
+	import { GlossWrapComponent, defineGlossComponent } from '$lib/index.js';
 
 	export const config = defineGlossComponent({
 		id: 'tooltip',
 		name: 'Tooltip',
-		groups: [],
+		groups: ['Unsorted'],
 	});
 </script>
 
@@ -35,7 +35,7 @@
 
 <Tooltip.Provider>
 	{#each variations as variation, i (i)}
-		<GlossComponent>
+		<GlossWrapComponent>
 			<Tooltip.Root>
 				<Tooltip.Trigger class={buttonVariants({ variant: 'outline' })}>
 					{variation.trigger}
@@ -44,6 +44,6 @@
 					<p>{variation.content}</p>
 				</Tooltip.Content>
 			</Tooltip.Root>
-		</GlossComponent>
+		</GlossWrapComponent>
 	{/each}
 </Tooltip.Provider>

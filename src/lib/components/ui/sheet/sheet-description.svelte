@@ -11,6 +11,6 @@
 
 <SheetPrimitive.Description
 	bind:ref
-	class={cn('text-sm text-muted-foreground', className)}
+	class={cn('sg-text-sm sg-text-muted-foreground', className)}
 	{...restProps}
 />
