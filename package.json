@@ -79,8 +79,5 @@
 	},
 	"bugs": {
 		"url": "https://github.com/OllieJT/gloss/issues"
-	},
-	"engines": {
-		"node": "^20"
 	}
 }
