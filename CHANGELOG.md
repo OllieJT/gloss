@@ -1,5 +1,13 @@
 # svelte-gloss
 
+## 0.0.8
+
+### Patch Changes
+
+- [#12](https://github.com/OllieJT/gloss/pull/12) [`81a7961`](https://github.com/OllieJT/gloss/commit/81a7961605451ed66ec62d275804ca4df4311b49) Thanks [@OllieJT](https://github.com/OllieJT)! - fix border color on dark mode
+
+- [#12](https://github.com/OllieJT/gloss/pull/12) [`81a7961`](https://github.com/OllieJT/gloss/commit/81a7961605451ed66ec62d275804ca4df4311b49) Thanks [@OllieJT](https://github.com/OllieJT)! - fix component selection indicator
+
 ## 0.0.7
 
 ### Patch Changes
