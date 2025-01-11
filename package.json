@@ -80,6 +80,6 @@
 		"url": "https://github.com/OllieJT/gloss/issues"
 	},
 	"engines": {
-		"node": "^22.13.0"
+		"node": "^22.12.0"
 	}
 }
