@@ -28,7 +28,7 @@
 </script>
 
 <div data-gloss="root" class="sg-flex sg-flex-col sg-bg-background sg-text-foreground">
-	<div class="sg-flex sg-gap-2 sg-border-b sg-bg-card sg-p-4">
+	<div class="sg-flex sg-gap-2 sg-border-b sg-border-border sg-bg-card sg-p-4">
 		<Filter
 			class="sg-mr-auto sg-min-w-0 sg-flex-auto sg-shrink"
 			{groups}
