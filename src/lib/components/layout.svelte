@@ -67,7 +67,7 @@
 </div>
 
 <style lang="postcss">
-	[data-gloss='root'] :global(*) {
+	[data-gloss='root'] :global(.border) {
 		@apply sg-border-border;
 	}
 </style>
