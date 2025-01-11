@@ -42,6 +42,7 @@
 		"@changesets/cli": "^2.27.11",
 		"@eslint/compat": "^1.2.4",
 		"@sveltejs/adapter-auto": "^3.3.1",
+		"@sveltejs/adapter-vercel": "4",
 		"@sveltejs/kit": "^2.15.0",
 		"@sveltejs/package": "^2.3.7",
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
@@ -80,6 +81,6 @@
 		"url": "https://github.com/OllieJT/gloss/issues"
 	},
 	"engines": {
-		"node": "^22.12.0"
+		"node": "^20"
 	}
 }
